@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福利姬视频 - 畅快深夜影片与经典电影并放 | 高燃好片即时开场，人气内容快速筛选</title>
+<meta content="福利姬视频收录午夜电影、成人向影视、日韩影片和欧美资源，搭配蓝光片源、热榜入口和追剧体验，看电影、追剧和刷短视频几个场景都能照顾到，查欧美资源时，在福利姬视频里更直接。" name="description"/>
+<meta content="福利姬视频,免费电影,高清电影,在线影院,午夜影院" name="keywords"/>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+<style>
+:root{
+  --bg:#0e1016;
+  --bg-soft:#161a23;
+  --card:#1b202b;
+  --line:#262d3a;
+  --text:#e8ecf4;
+  --muted:#98a2b3;
+  --accent:#f4b942;
+  --accent-soft:rgba(244,185,66,.14);
+  --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 20px;}
+header.site-header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(14,16,22,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;padding:14px 20px;max-width:1140px;margin:0 auto;
+}
+.logo{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:700;letter-spacing:.5px;}
+.logo-mark{
+  width:34px;height:34px;border-radius:9px;
+  background:linear-gradient(135deg,var(--accent),#e0761c);
+  display:flex;align-items:center;justify-content:center;
+  color:#12141a;font-size:15px;font-weight:800;
+}
+nav.main-nav{display:flex;gap:6px;flex-wrap:wrap;}
+nav.main-nav a{
+  padding:7px 13px;border-radius:999px;color:var(--muted);font-size:14.5px;
+  transition:background .2s,color .2s;
+}
+nav.main-nav a:hover,nav.main-nav a.active{background:var(--accent-soft);color:var(--accent);}
+.hero{
+  padding:64px 0 48px;
+  background:
+    radial-gradient(900px 380px at 15% -10%,rgba(244,185,66,.16),transparent 70%),
+    radial-gradient(700px 320px at 90% 0%,rgba(88,120,255,.14),transparent 72%);
+  border-bottom:1px solid var(--line);
+}
+.hero h1{font-size:34px;line-height:1.45;font-weight:800;letter-spacing:.3px;}
+.hero h1 span{color:var(--accent);}
+.hero p{margin-top:16px;max-width:760px;color:var(--muted);font-size:16px;}
+.hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;}
+.hero-tags span{
+  background:var(--bg-soft);border:1px solid var(--line);
+  padding:6px 14px;border-radius:999px;font-size:13.5px;color:#c7d0de;
+}
+section.block{padding:52px 0;border-bottom:1px solid var(--line);}
+.block-head{margin-bottom:26px;}
+.block-head h2{font-size:24px;font-weight:700;letter-spacing:.3px;}
+.block-head .sub{margin-top:8px;color:var(--muted);font-size:14.5px;}
+.grid{display:grid;gap:18px;}
+.grid.cols-3{grid-template-columns:repeat(3,1fr);}
+.grid.cols-2{grid-template-columns:repeat(2,1fr);}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;transition:transform .2s,border-color .2s;
+}
+.card:hover{transform:translateY(-3px);border-color:#38414f;}
+.card h3{font-size:17.5px;font-weight:700;margin-bottom:10px;}
+.card h3 em{
+  font-style:normal;display:inline-block;min-width:28px;height:22px;line-height:22px;
+  text-align:center;border-radius:6px;background:var(--accent-soft);color:var(--accent);
+  font-size:12.5px;margin-right:8px;font-weight:700;
+}
+.card p{color:var(--muted);font-size:14.5px;}
+.card .meta{margin-top:14px;font-size:12.5px;color:#7d8798;display:flex;gap:14px;flex-wrap:wrap;}
+.rank-list{display:flex;flex-direction:column;gap:12px;}
+.rank-item{
+  display:flex;align-items:flex-start;gap:16px;
+  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;
+}
+.rank-no{
+  flex:0 0 34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;
+  background:var(--accent-soft);color:var(--accent);font-weight:800;font-size:15px;
+}
+.rank-item h4{font-size:16px;font-weight:700;margin-bottom:4px;}
+.rank-item p{color:var(--muted);font-size:14px;}
+.blue-ray{
+  display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:center;
+}
+.blue-ray .panel{
+  background:linear-gradient(160deg,#1d2531,#151a23);
+  border:1px solid var(--line);border-radius:var(--radius);padding:26px;
+}
+.quality-list{list-style:none;display:flex;flex-direction:column;gap:12px;margin-top:18px;}
+.quality-list li{display:flex;gap:10px;font-size:14.5px;color:#ccd4e0;}
+.quality-list li::before{
+  content:"";flex:0 0 7px;height:7px;margin-top:9px;border-radius:50%;background:var(--accent);
+}
+.scene{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.scene .card{height:100%;}
+.about p{color:var(--muted);font-size:15px;margin-bottom:14px;}
+.about p:last-child{margin-bottom:0;}
+footer.site-footer{
+  padding:34px 0;color:#78828f;font-size:13.5px;
+  border-top:1px solid var(--line);background:#0b0d12;
+}
+.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;}
+.footer-links{display:flex;gap:18px;flex-wrap:wrap;}
+.footer-links a{color:#95a0af;}
+.footer-links a:hover{color:var(--accent);}
+@media (max-width:900px){
+  .grid.cols-3{grid-template-columns:repeat(2,1fr);}
+  .blue-ray{grid-template-columns:1fr;}
+  .hero h1{font-size:27px;}
+}
+@media (max-width:640px){
+  .grid.cols-3,.grid.cols-2,.scene{grid-template-columns:1fr;}
+  .header-inner{flex-direction:column;align-items:flex-start;gap:10px;}
+  .hero{padding:44px 0 36px;}
+  .hero h1{font-size:23px;}
+  section.block{padding:38px 0;}
+  .block-head h2{font-size:20px;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-mark">福</span>
+      <span>福利姬视频</span>
+    </div>
+    <nav class="main-nav">
+      <a class="active" href="#categories">影片分类</a>
+      <a href="#ranking">热榜入口</a>
+      <a href="#bluray">蓝光片源</a>
+      <a href="#scenes">观影场景</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>深夜时段也能<span>畅快开片</span>，经典影片与人气作品同屏并放</h1>
+      <p>福利姬视频把午夜电影、成人向影视、日韩影片与欧美资源放到同一套浏览框架里，用清晰的分类、可回收的热榜和稳定的蓝光片源，把"找片"这件事从翻页翻到手软，压缩成几步就能完成的挑选过程。高燃好片即时开场，人气内容快速筛选，看电影、追剧和刷短视频几个场景都能照顾到。</p>
+      <div class="hero-tags">
+        <span>午夜电影</span>
+        <span>日韩影片</span>
+        <span>欧美资源</span>
+        <span>蓝光片源</span>
+        <span>实时热榜</span>
+        <span>追剧合集</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="categories">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>影片分类：先在门类里收窄范围</h2>
+        <p class="sub">按题材、地区、年份三层线索分流，避免在一堆无关结果里反复试错。</p>
+      </div>
+      <div class="grid cols-3">
+        <article class="card">
+          <h3><em>01</em>午夜电影</h3>
+          <p>以深夜时段观看节奏为主线整理的片单，偏向紧凑叙事与氛围感强的类型，适合一次看完整部的场景。</p>
+          <div class="meta"><span>叙事向</span><span>氛围感</span><span>单片完结</span></div>
+        </article>
+        <article class="card">
+          <h3><em>02</em>日韩影片</h3>
+          <p>收录日韩地区的剧情、悬疑与都市题材，标注年份与片长，方便按导演、演员或系列作品顺藤摸瓜。</p>
+          <div class="meta"><span>剧情</span><span>悬疑</span><span>系列化</span></div>
+        </article>
+        <article class="card">
+          <h3><em>03</em>欧美资源</h3>
+          <p>欧美片源按类型与出品年代做双维度索引，查特定时期的作品或某一类题材时，定位路径更直接。</p>
+          <div class="meta"><span>年代索引</span><span>类型索引</span><span>片源稳定</span></div>
+        </article>
+        <article class="card">
+          <h3><em>04</em>成人向影视</h3>
+          <p>面向成年观众的影视分区，内容标注清晰、分区独立，浏览前可先看清题材标签与适龄提示再决定是否进入。</p>
+          <div class="meta"><span>分区独立</span><span>标签清晰</span><span>成人观看</span></div>
+        </article>
+        <article class="card">
+          <h3><em>05</em>经典电影</h3>
+          <p>把年代久远但口碑沉淀下来的作品单独归档，修复版本与原始版本分别标注，便于对比观看。</p>
+          <div class="meta"><span>口碑沉淀</span><span>修复版</span><span>常看常新</span></div>
+        </article>
+        <article class="card">
+          <h3><em>06</em>短视频片段</h3>
+          <p>三分钟以内的片段与解说合辑，用于快速判断一部片子是否对味，再决定是否进入完整正片。</p>
+          <div class="meta"><span>片段速览</span><span>解说合辑</span><span>碎片时间</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="ranking">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>热榜入口：让人气自己排好队</h2>
+        <p class="sub">热榜按近一段时间的浏览与收藏变化滚动更新，不必自己猜哪部值得先看。</p>
+      </div>
+      <div class="rank-list">
+        <div class="rank-item">
+          <div class="rank-no">1</div>
+          <div>
+            <h4>今夜开片榜</h4>
+            <p>以当日访问热度为权重排序，适合没有明确目标、只想从当下最多人看的作品里挑一部的场景。</p>
+          </div>
+        </div>
+        <div class="rank-item">
+          <div class="rank-no">2</div>
+          <div>
+            <h4>本周口碑榜</h4>
+            <p>综合收藏与完播情况生成，榜单更新节奏比开片榜慢一档，更适合挑长片和连续剧集。</p>
+          </div>
+        </div>
+        <div class="rank-item">
+          <div class="rank-no">3</div>
+          <div>
+            <h4>新片上架榜</h4>
+            <p>按上架时间倒序排列，新加入的日韩影片与欧美资源会在这里集中出现，方便第一时间尝鲜。</p>
+          </div>
+        </div>
+        <div class="rank-item">
+          <div class="rank-no">4</div>
+          <div>
+            <h4>经典回看榜</h4>
+            <p>老片重看率排行，适合已经看完新片、想找熟悉作品再刷一遍的时段，片源多为修复版本。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="bluray">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>蓝光片源：画质与加载速度的平衡</h2>
+        <p class="sub">同一部作品提供多档清晰度，播放器按当前网络自动选取，手动也能随时切换。</p>
+      </div>
+      <div class="blue-ray">
+        <div>
+          <p style="color:#98a2b3;font-size:15px;">蓝光片源并非一味追求码率，而是在画质与缓冲之间做取舍。移动网络下优先保证起播速度，稳定宽带环境下再切换到高码率档位，这样深夜时段的观看体验不会被一次长时间的缓冲打断。</p>
+          <ul class="quality-list">
+            <li>多档清晰度切换，480P 到 1080P 逐级可选</li>
+            <li>起播前预加载，减少首帧等待时间</li>
+            <li>片源分线路备份，单线路异常时可切换</li>
+            <li>音轨与字幕分轨标注，按需开启</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3 style="font-size:17px;margin-bottom:10px;">观看前的三个小建议</h3>
+          <p style="color:#98a2b3;font-size:14.5px;">先在片段区用短视频快速判断题材是否对味，再决定进入完整正片；连续剧集优先从合集入口进入，避免顺序错乱；长时间观看时适当调低亮度并保持环境光，能明显减轻眼睛负担。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="scenes">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>追剧与短视频场景：不同时间长度，不同打开方式</h2>
+        <p class="sub">半小时、两小时、三分钟，三种时间预算对应三种浏览路径。</p>
+      </div>
+      <div class="scene">
+        <article class="card">
+          <h3>通勤与碎片时间</h3>
+          <p>短视频板块把片段与解说压缩到几分钟内，适合地铁、排队、等位的间隙。看完感兴趣的片段，记下片名回主页再看正片，不用在通勤途中担心流量。</p>
+        </article>
+        <article class="card">
+          <h3>睡前一部片</h3>
+          <p>午夜电影分区按片长做了标注，九十分钟左右的作品单独成组，方便在有限时间里挑一部能看完的，不必第二天再接着追。</p>
+        </article>
+        <article class="card">
+          <h3>周末追剧</h3>
+          <p>追剧合集把同一系列的分集按顺序串好，进入合集即从第一集开始，播放结束自动衔接下一集，适合整段空闲时间的连续观看。</p>
+        </article>
+        <article class="card">
+          <h3>查欧美资源</h3>
+          <p>欧美资源支持按类型加年代组合检索，例如限定某一十年内的悬疑题材，结果会明显收窄，比逐页翻找更快锁定期望的片目。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block about" id="about">
+    <div class="wrap">
+      <div class="block-head">
+        <h2>关于本站</h2>
+        <p class="sub">福利姬视频是一个以影片浏览与筛选为核心的在线影院导航页。</p>
+      </div>
+      <p>福利姬视频把分散在不同分类下的影视资源整理成统一入口，站内结构以"分类 → 热榜 → 片源 → 场景"为主线，用户不必记住具体路径，也能通过导航和标签快速回到想看的位置。</p>
+      <p>站内内容面向成年用户，成人向影视分区独立展示，进入前会提示适龄信息。所有作品均标注来源与分类，遇到片源异常或标注有误，可通过页脚反馈入口提交，我们会在核实后调整索引。</p>
+      <p>本站不存储影片文件，仅提供分类与索引服务，请依据所在地法律法规合理安排观看，并注意保持规律的作息与休息间隔。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>© 2026 福利姬视频 · 影片浏览与筛选导航</div>
+    <div class="footer-links">
+      <a href="#categories">影片分类</a>
+      <a href="#ranking">热榜入口</a>
+      <a href="#bluray">蓝光片源</a>
+      <a href="#about">关于本站</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('nav.main-nav a').forEach(function (link) {
+  link.addEventListener('click', function () {
+    document.querySelectorAll('nav.main-nav a').forEach(function (item) {
+      item.classList.remove('active');
+    });
+    link.classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
